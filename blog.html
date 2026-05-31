@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtalk — Блог о психологии</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ШАПКА (Header) -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Бургер-кнопка для мобильных -->
+            <button class="header__burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Логотип -->
+            <a href="/" class="logo">
+                <img src="images/svg/logo.svg" alt="Youtalk — психологическое сообщество" class="logo__img">
+            </a>
+
+            <!-- Навигация (десктоп) -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Тарифы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Для бизнеса</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Психологам</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Сертификат</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active">Блог</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Магазин</a></li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка "Войти" -->
+            <button class="btn btn--outline">Войти</button>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЕ СОДЕРЖИМОЕ (Main) -->
+    <main class="main">
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <div class="breadcrumbs">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">Блог</span>
+            </div>
+
+            <h1 class="page-title">Блог</h1>
+
+            <!-- Фильтры-теги -->
+            <div class="tags" role="tablist" aria-label="Фильтр статей">
+                <button class="tags__item tags__item--active" role="tab">Все</button>
+                <button class="tags__item" role="tab">Самооценка и самопринятие</button>
+                <button class="tags__item" role="tab">Self</button>
+                <button class="tags__item" role="tab">Чувства и эмоции</button>
+                <button class="tags__item" role="tab">Тревога</button>
+                <button class="tags__item" role="tab">Упражнения</button>
+                <button class="tags__item" role="tab">Психология питания</button>
+                <button class="tags__item" role="tab">Насилие</button>
+                <button class="tags__item" role="tab">Личное здоровье</button>
+            </div>
+
+            <!-- Сетка карточек (CSS Grid) -->
+            <div class="blog-grid">
+
+                <!-- Карточка 1 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="images/png/running.png" alt="Бегущий человек" class="card__image">
+                        <span class="card__badge">Упражнения</span>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                        <p class="card__meta">Автор: Екатерина Бельтюкова · 22.08.2021</p>
+                        <a href="article.html" class="card__link">Читать →</a>
+                    </div>
+                </article>
+                <!-- Карточка 2 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="images/png/emotion.png" alt="Девушка с закрытыми глазами" class="card__image">
+                        <span class="card__badge">Самооценка и самопринятие</span>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Эмоциональное выгорание — стадии и методы восстановления</h2>
+                        <p class="card__meta">Автор: Лиза Файнтух · 21.08.2021</p>
+                        <a href="#" class="card__link">Читать →</a>
+                    </div>
+                </article>
+
+                <!-- Карточка 3 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="images/png/sleep.png" alt="Девушка спит" class="card__image">
+                        <span class="card__badge">Сон</span>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Способы борьбы с бессонницей. Советы психиатра</h2>
+                        <p class="card__meta">Автор: Максим Степанов · 23.08.2021</p>
+                        <a href="#" class="card__link">Читать →</a>
+                    </div>
+                </article>
+
+                <!-- Карточка 4 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="images/png/communication.png" alt="Разговор двух людей" class="card__image">
+                        <span class="card__badge">Общение</span>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Как дружить с людьми и не выгорать</h2>
+                        <p class="card__meta">Автор: София Ким · 24.08.2021</p>
+                        <a href="#" class="card__link">Читать →</a>
+                    </div>
+                </article>
+
+                <!-- Карточка 5 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="images/png/toast.png" alt="Медитация" class="card__image">
+                        <span class="card__badge">Тревога</span>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Как управлять своими эмоциями: 8 шагов</h2>
+                        <p class="card__meta">Автор: Екатерина Бельтюкова · 25.08.2021</p>
+                        <a href="#" class="card__link">Читать →</a>
+                    </div>
+                </article>
+
+                <!-- Карточка 6 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="images/png/grandma.png" alt="Йога" class="card__image">
+                        <span class="card__badge">Психология питания</span>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Правильное питание и психика: есть ли связь?</h2>
+                        <p class="card__meta">Автор: Анна Иванова · 26.08.2021</p>
+                        <a href="#" class="card__link">Читать →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Кнопка "Загрузить ещё" -->
+            <div class="load-more">
+                <button class="btn btn--primary btn--large">Загрузить ещё</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Левая колонка с навигацией -->
+                <div class="footer__nav">
+                    <div class="footer__nav-col">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">Для бизнеса</a></li>
+                            <li><a href="#">Психологам</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <ul>
+                            <li><a href="#">Сертификат</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Магазин</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <ul>
+                            <li><a href="#">Вебинары</a></li>
+                            <li><a href="#">Подкаст</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Центральная колонка: подписка -->
+                <div class="footer__subscribe">
+                    <p class="footer__subscribe-text">Одно письмо в неделю со свежими новостями и акциями</p>
+                    <form class="footer__form" action="#" method="post">
+                        <input type="email" class="footer__input" placeholder="Ваш e-mail" aria-label="Email для подписки">
+                        <button type="submit" class="footer__submit" aria-label="Подписаться">→</button>
+                    </form>
+                    <p class="footer__agreement">
+                        Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с политикой конфиденциальности
+                    </p>
+                </div>
+
+                <!-- Правая колонка: контакты и соцсети -->
+                <div class="footer__contacts">
+                    <div class="footer__socials">
+                        <a href="#" class="social-link" aria-label="VK">
+                            <img src="images/svg/vk.svg" alt="VK">
+                        </a>
+                        <a href="#" class="social-link" aria-label="TG">
+                            <img src="images/svg/tg.svg" alt="TG">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <img src="images/svg/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="#" class="social-link" aria-label="HZ">
+                            <img src="images/svg/hz.svg" alt="HZ">
+                        </a>
+                    </div>
+                    <p class="footer__copy">© Youtalk, 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+	<!-- Бургер-меню (мобильное) - добавляется динамически или прямо в HTML -->
+	<div class="mobile-menu">
+		<div class="mobile-menu__header">
+			<button class="mobile-menu__close" aria-label="Закрыть меню">✕</button>
+		</div>
+		<nav class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">О нас</a></li>
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Тарифы</a></li>
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Для бизнеса</a></li>
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Психологам</a></li>
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Сертификат</a></li>
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link mobile-nav__link--active">Блог</a></li>
+				<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Магазин</a></li>
+			</ul>
+		</nav>
+		<div class="mobile-menu__footer">
+			<button class="btn btn--outline mobile-menu__btn">Войти</button>
+		</div>
+	</div>
+
+	<script>
+		// Бургер-меню: открытие/закрытие
+		const burger = document.querySelector('.header__burger');
+		const mobileMenu = document.querySelector('.mobile-menu');
+		const closeBtn = document.querySelector('.mobile-menu__close');
+
+		function openMenu() {
+			mobileMenu.classList.add('mobile-menu--open');
+			document.body.style.overflow = 'hidden'; // блокируем скролл
+		}
+
+		function closeMenu() {
+			mobileMenu.classList.remove('mobile-menu--open');
+			document.body.style.overflow = '';
+		}
+
+		if (burger) {
+			burger.addEventListener('click', openMenu);
+		}
+
+		if (closeBtn) {
+			closeBtn.addEventListener('click', closeMenu);
+		}
+
+		// Закрытие при клике вне меню (на оверлей)
+		if (mobileMenu) {
+			mobileMenu.addEventListener('click', function(e) {
+				if (e.target === mobileMenu) {
+					closeMenu();
+				}
+			});
+		}
+
+		// Закрытие при нажатии на Esc
+		document.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('mobile-menu--open')) {
+				closeMenu();
+			}
+		});
+	</script>
+	
+</body>
+</html>
