@@ -15,9 +15,9 @@
 
 2. **Перейдите в папку проекта:**
 
-bash```
-cd MEPHI_SEM2_Frontend_FP_YoutalkProject
-```
+    ```bash
+	cd MEPHI_SEM2_Frontend_FP_YoutalkProject
+	```
 
 3. **Откройте файл blog.html в вашем браузере.** или article.html
 
